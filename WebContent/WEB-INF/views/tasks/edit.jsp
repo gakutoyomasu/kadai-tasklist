@@ -3,7 +3,7 @@
 <c:import url="/WEB-INF/layout/app.jsp">
     <c:param name="content">
         <c:choose>
-            <c:when test="${tasklist != null}">
+            <c:when test="${tasks != null}">
                 <h2>id : ${tasks.id} のタスク編集ページ</h2>
 
                 <form method="POST" action="${pageContext.request.contextPath}/update">
